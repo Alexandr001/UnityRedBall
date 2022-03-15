@@ -18,12 +18,12 @@ public class PlayerController : MonoBehaviour
     private Vector3 _vectorForce;
     private void Awake()
     {
-        if (_speedPlayer > 30) throw new System.Exception("Çàäàíà ñëèøêîì âûñîêàÿ ñêîðîñòü");
+        if (_speedPlayer > 30) throw new System.Exception("Ã‡Ã Ã¤Ã Ã­Ã  Ã±Ã«Ã¨Ã¸ÃªÃ®Ã¬ Ã¢Ã»Ã±Ã®ÃªÃ Ã¿ Ã±ÃªÃ®Ã°Ã®Ã±Ã²Ã¼");
         _rigidbody = GetComponent<Rigidbody>();
         _camera = Camera.main;
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
